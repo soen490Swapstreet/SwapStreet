@@ -40,5 +40,16 @@ services:
     depends_on:
       - postgres
 
+    # Frontend service
+  swapstreet:
+    build: ./swapstreet
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./swapstreet:/usr/app
+      - /usr/app/node_modules
+    environment:
+      NODE_ENV: development
+
 volumes:
   postgres_data:
