@@ -38,7 +38,7 @@ cd SwapStreet
 # ================================
 POSTGRES_USER=<your-db-username>
 POSTGRES_PASSWORD=<your-db-password>
-POSTGRES_DB=swapstreet-db
+POSTGRES_DB=swapstreet_db
 
 # ================================
 # pgAdmin Configuration
@@ -49,7 +49,7 @@ PGADMIN_DEFAULT_PASSWORD=<your-pgAdmin-password>
 # ================================
 # Backend connection string
 # ================================
-ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=swapstreet-db;Username=<your-db-username>;Password=<your-db-password>
+ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=swapstreet_db;Username=<your-db-username>;Password=<your-db-password>
 ```
 
 - Make sure `Docker Desktop` is running, then:

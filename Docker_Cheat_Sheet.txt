@@ -73,7 +73,7 @@ PgAdmin         -> http://localhost:5050/
 # ================================
 POSTGRES_USER=postgres
 POSTGRES_PASSWORD=********
-POSTGRES_DB=swapstreet-db
+POSTGRES_DB=swapstreet_db
 
 # ================================
 # pgAdmin Configuration
@@ -84,7 +84,7 @@ PGADMIN_DEFAULT_PASSWORD=*******
 # ================================
 # Backend connection string
 # ================================
-ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=swapstreet-db;Username=postgres;Password=********
+ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=swapstreet_db;Username=postgres;Password=********
 --------------------
 
 9. Migrations

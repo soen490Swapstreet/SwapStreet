@@ -13,7 +13,7 @@ The database provider used for this project is PostgreSQL. It offers performance
 # ================================
 POSTGRES_USER=<your-db-username>
 POSTGRES_PASSWORD=<your-db-password>
-POSTGRES_DB=swapstreet-db
+POSTGRES_DB=swapstreet_db
 
 # ================================
 # pgAdmin Configuration
@@ -24,7 +24,7 @@ PGADMIN_DEFAULT_PASSWORD=<your-pgAdmin-password>
 # ================================
 # Backend connection string
 # ================================
-ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=swapstreet-db;Username=<your-db-username>;Password=<your-db-password>
+ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=swapstreet_db;Username=<your-db-username>;Password=<your-db-password>
 ```
 
 ## Setup instructions
@@ -44,7 +44,7 @@ Now to setup pgAdmin:
 - Login with your pgAdmin email and password
   - **Email:** `<your@email.com>`
   - **Password:** `<your-pgAdmin-password>` 
-- Click `Add New Server` -> **Name:** `swapstreet-db`
+- Click `Add New Server` -> **Name:** `swapstreet-server`
 - Inside `Add New Server` go to `Connection` tab -> 
   - **Host name:** postgres
   - **Port:** 5432
