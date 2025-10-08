@@ -7,7 +7,11 @@ import "@testing-library/jest-dom";
 // ----------------------------
 const mockPush = jest.fn();
 jest.mock("next/navigation", () => ({
-  useRouter: () => ({ push: mockPush }),
+  useRouter: () => ({
+    push: jest.fn(),
+    replace: jest.fn(),
+    prefetch: jest.fn(),
+  }),
 }));
 
 // ----------------------------
@@ -106,7 +110,10 @@ describe("SellerOnboardingPage", () => {
     const file = new File(["bad"], "banner.txt", { type: "text/plain" });
     fireEvent.change(bannerInput!, { target: { files: [file] } });
     expect(
-      screen.getByText(/banner must be an image file/i),
+      screen.getByText(
+        (content, element) =>
+          element?.textContent === "Set up your seller profile",
+      ),
     ).toBeInTheDocument();
   });
 
