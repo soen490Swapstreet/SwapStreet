@@ -45,7 +45,7 @@ export default function LandingPage() {
       icon: <Leaf className="h-8 w-8 text-teal-500" />,
       title: "Sustainability Tracker",
       description:
-        "Track your environmental impact and see how much you're helping the planet",
+        "Track your environmental impact and see how much you are helping the planet",
       badge: "Eco-Friendly",
     },
     {
@@ -221,7 +221,7 @@ export default function LandingPage() {
               Our Environmental Impact
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              See the real difference we're making together in creating a more
+              See the real difference we are making together in creating a more
               sustainable fashion industry.
             </p>
           </div>
